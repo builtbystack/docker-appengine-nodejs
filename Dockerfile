@@ -3,7 +3,7 @@ FROM golang AS builder
 RUN go install github.com/gqlgo/gqlint@latest
 
 
-FROM circleci/node:14-browsers-legacy
+FROM cimg/node:17.2-browsers
 
 ARG HOME=/home/circleci
 
