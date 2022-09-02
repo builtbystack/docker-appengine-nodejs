@@ -1,6 +1,7 @@
 FROM golang AS builder
 
 RUN go install github.com/gqlgo/gqlint@latest
+RUN go install github.com/gqlgo/querystring@latest
 RUN go install github.com/gqlgo/deprecatedquery/cmd/deprecatedquery@latest
 
 
