@@ -1,8 +1,9 @@
 FROM golang AS builder
 
 RUN go install github.com/gqlgo/gqlint@latest
+RUN go install github.com/gqlgo/lackid/cmd/lackid@v0.1.2
+RUN go install github.com/gqlgo/deprecatedquery/cmd/deprecatedquery@v0.0.3
 RUN go install github.com/gqlgo/querystring@latest
-RUN go install github.com/gqlgo/deprecatedquery/cmd/deprecatedquery@latest
 
 
 FROM cimg/node:17.2-browsers
