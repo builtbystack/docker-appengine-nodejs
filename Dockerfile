@@ -6,7 +6,7 @@ RUN go install github.com/gqlgo/deprecatedquery/cmd/deprecatedquery@v0.0.3
 RUN go install github.com/gqlgo/querystring@latest
 
 
-FROM cimg/node:17.2-browsers
+FROM cimg/node:22.23.4-browsers
 
 ARG HOME=/home/circleci
 
